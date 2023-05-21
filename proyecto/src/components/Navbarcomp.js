@@ -1,47 +1,36 @@
-import React, { Component } from 'react'
-import {Navbar, Nav, Form, FormControl} from  'react-bootstrap'
-import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
-import Inicio from './Inicio';
-import Empresa from './Empresa';
-import Catalogo from './Catalogo';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-export default class Navbarcomp extends Component {
-  render() {
-    return (
-        <Router>
-      <div>
-        <Navbar bg="dark" variant='dark' expand="lg">
-        <Navbar.Brand href="#Inicio">
-        <img
-              src=".\components\img\LOGO.png"
-              width="150"
-              height="30"
-              className="d-inline-block align-top"
-              alt=""
-            /></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link as={Link} to={"/inicio"}>INICIO</Nav.Link>
-            <Nav.Link as={Link} to={"/empresa"}>EMPRESA</Nav.Link>
-            <Nav.Link as={Link} to={"/catalogo"}>CATALOGO</Nav.Link>
-            <Form inline>
-                <FormControl
-                    type="text"
-                    placeholder="search"
-                    className='mr-sm-2'
-                />
-            </Form>
-          </Nav>
-        </Navbar.Collapse>
-    </Navbar>
-    <Routes>
-        <Route path='/inicio' element={<Inicio/>}/>
-        <Route path='/empresa' element={<Empresa/>}/>
-        <Route path='/catalogo' element={<Catalogo/>}/>
-    </Routes>  
-    </div>
-    </Router>
-    )
-  }
+export const Navbarcomp = () => {
+  return (
+    <div>
+            <nav className="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
+                <div className="container-fluid">
+                    <Link to='/inicio'>
+                        <img src='./LOGO.PNG' height='40' width='250'/>
+                    </Link>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav mx-auto" >
+                            <li className="nav-item">
+                                <Link className="nav-link active" to='/inicio'>INICIO</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to ="/empresa">EMPRESA</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to ="/catalogo">CATALOGO</Link>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </nav>
+        </div>
+  )
 }
+
+
+
+
