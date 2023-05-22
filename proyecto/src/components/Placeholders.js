@@ -10,7 +10,7 @@ export const Placeholders = () => {
             <img src="./images/etrabajo.jpg" height="200" width="300" className="W-100" alt="..."/>
 
             <h5 className="mt-0">EL PUNTO DE LAS VARIEDADES</h5>
-            <p>Somos una empresa que apoya las madres<br></br> cabezas de familia. </p>
+            <p>Somos una empresa que trabaja en innovacion y comercializacion</p><br/> 
             <Link href="#" className="btn btn-secondary"  to ="/empresa">EMPRESA</Link>
 
           </div>

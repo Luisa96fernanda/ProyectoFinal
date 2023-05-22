@@ -15,12 +15,15 @@ export const Navbarcomp = () => {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav mx-auto" >
                             <li className="nav-item">
+                                <img src='./images/logini.png' height='20' width='20'/>
                                 <Link className="nav-link active" to='/inicio'>INICIO</Link>
                             </li>
                             <li className="nav-item">
+                                <img src='./images/logemp.png' height='20' width='20'/>
                                 <Link className="nav-link" to ="/empresa">EMPRESA</Link>
                             </li>
                             <li className="nav-item">
+                                <img src='./images/logcat.png' height='20' width='20'/>
                                 <Link className="nav-link" to ="/catalogo">CATALOGO</Link>
                             </li>
                         </ul>
