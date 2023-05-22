@@ -13,22 +13,22 @@ export const Carousel = () => {
             <div className="carousel-item active">
                 <img src="./images/pinateria.png " height="500" width="150" className="d-block w-100" alt="..."/>
                 <div className="carousel-caption d-none d-md-block ">
-                    <h1>TODO PARA TU FIESTA</h1>
-                    <h5>Variedad en productos para tus los eventos especiales </h5>
+                    <h1 className='text-black'>TODO PARA TU FIESTA</h1>
+                    <h5 className='text-black'>Variedad en productos para tus eventos especiales </h5>
                 </div>
             </div>
             <div className="carousel-item">
                 <img src="./images/escolar.png " height="500" width="150" className="d-block w-100" alt="..."/>
                 <div className="carousel-caption d-none d-md-block">
-                    <h1>TODO PARA TU UTILIDAD</h1>
-                    <h5> Variedad en utiles esolares de multiples reflerencias</h5>
+                    <h1 className='text-black'>TODO PARA TU UTILIDAD</h1>
+                    <h5 className='text-black'> Variedad en utiles esolares de multiples reflerencias</h5>
                 </div>
             </div>
             <div className="carousel-item">
                 <img src="./images/hogar.png " height="500" width="150" className="d-block w-100" alt="..."/>
                 <div className="carousel-caption d-none d-md-block">
-                    <h1>TODO PARA TU HOGAR</h1>
-                    <h5>Variedad de articulos de hogar ideal para tu casa o regalo </h5>
+                    <h1 className='text-black'>TODO PARA TU HOGAR</h1>
+                    <h5 className='text-black'>Variedad de articulos de hogar ideal para tu casa o regalo </h5>
                 </div>
             </div>
         </div>
