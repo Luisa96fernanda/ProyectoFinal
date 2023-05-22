@@ -11,7 +11,6 @@ export const Inicio = () => {
       <Carousel />
       <br></br>
       <Placeholders/>
-      
     </div>
   )
 }

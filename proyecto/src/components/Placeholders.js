@@ -3,25 +3,26 @@ import { Link } from 'react-router-dom'
 
 export const Placeholders = () => {
   return (
-    <div>
+      <div>
         
-        <div className="card">
-            <img src="./images/etrabajo.jpg" height="200" width="300" className="card-img-top" alt="..."/>
+        <div className="row g-0 bg-body-secondary position-relative">
+          <div className="col-md-6 mb-md-0 p-md-4">
+            <img src="./images/etrabajo.jpg" height="200" width="300" className="W-100" alt="..."/>
 
-            <div className="card-body">
-                <h5 className="card-title">EL PUNTO DE LAS VARIEDADES</h5>
-                <p className="card-text">Somos una empresa que apoya las madres cabezas de familia.</p>
-                <Link href="#" className="btn btn-secondary"  to ="/empresa">EMPRESA</Link>
-            </div>
-            <img src="./images/etrabajo.jpg" height="200" width="300" className="card-img-top" alt="..."/>
+            <h5 className="mt-0">EL PUNTO DE LAS VARIEDADES</h5>
+            <p>Somos una empresa que apoya las madres<br></br> cabezas de familia. </p>
+            <Link href="#" className="btn btn-secondary"  to ="/empresa">EMPRESA</Link>
 
-            <div className="card-body">
-                <h5 className="card-title">EL PUNTO DE LAS VARIEDADES</h5>
-                <p className="card-text">Somos una empresa que apoya las madres cabezas de familia.</p>
-                <Link href="#" className="btn btn-primary"  to ="/empresa">EMPRESA</Link>
-            </div>
-        </div>
-        
-    </div>
+          </div>
+          <div className="col-md-6 mb-md-0 p-md-4">
+            <img src="./images/catalogo.png" height="200" width="300" className="W-100" alt="..."/>
+
+            <h5 className="mt-0">EL PUNTO DE LAS VARIEDADES</h5>
+            <p>Conoce nuestro portafolio. </p>
+            <Link href="#" className="btn btn-secondary"  to ="/catalogo">CATALOGO</Link>
+
+          </div>
+        </div>      
+      </div>
   )
 }

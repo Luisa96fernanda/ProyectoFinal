@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Route, Routes, Link, Form} from "react-router-d
 import { Inicio } from './pages/Inicio';
 import { Empresa } from './pages/Empresa';
 import { Catalogo } from './pages/Catalogo';
+import { Footer } from './components/Footer';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
               <Route path='/empresa' element={<Empresa/>}/>
               <Route path='/catalogo' element={<Catalogo/>}/>
           </Routes>
+          <Footer/>
         </Router> 
     </div>
   );
