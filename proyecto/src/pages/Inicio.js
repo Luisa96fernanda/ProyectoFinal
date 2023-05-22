@@ -5,12 +5,14 @@ import { Placeholders } from '../components/Placeholders'
 
 
 
+
+
 export const Inicio = () => {
   return (
     <div>
       <Carousel />
       <br></br>
-      <Placeholders/>
+      <Placeholders/>     
     </div>
   )
 }
